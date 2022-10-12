@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tabla Asincronica</h1>
+    <div class="cargar">
+        <h2>Cargar Datos</h2>
+        <form id="form">
+            <input type="text" id="pais" placeholder="Pais">
+            <input type="text" id="equipo" placeholder="Equipo">
+            <input type="text" id="figura" placeholder="Figura">
+            <button type="button" id="button" value="enviar">Enviar</button>
+        </form>
+    </div>
+    <div id="modificarForm" class="modificarForm">
+        <h2>Modificar Datos</h2>
+        <form id="formEdit">
+            <input id="inputEditId" type="hidden" name="id" placeholder="id" required>
+            <input id="inputEditPais" type="text" name="pais" placeholder="Pais" required>
+            <input id="inputEditEquipo" type="text" name="equipo" placeholder="Equipo" required>
+            <input id="inputEditFigura" type="text" name="figura" placeholder="Figura" required>
+            <button id="buttonModificar">Enviar</button>
+        </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>pais</th>
+                <th>equipo</th>
+                <th>figura</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+        <script src="tablaAsincronica.js"></script>
+</body>
+
+</html>
